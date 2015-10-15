@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+  <CompositionOfSpecies>
+    <species id="HSE" name="HSE">
+      <atomic count="1" name="HSE"/>
+    </species>
+    <species id="HSF" name="HSF">
+      <atomic count="1" name="HSF"/>
+    </species>
+    <species id="HSF_dimer" name="HSF">
+      <atomic count="2" name="HSF"/>
+    </species>
+    <species id="HSF_trimer" name="HSF">
+      <atomic count="3" name="HSF"/>
+    </species>
+    <species id="HSF_trimer_HSE" name="HSF:HSE">
+      <atomic count="3" name="HSF"/>
+      <atomic count="1" name="HSE"/>
+    </species>
+    <species id="HSP" name="HSP">
+      <atomic count="1" name="HSP"/>
+    </species>
+    <species id="HSP_HSF" name="HSP:HSF">
+      <atomic count="1" name="HSP"/>
+      <atomic count="1" name="HSF"/>
+    </species>
+    <species id="HSP_MFP" name="HSP:MFP">
+      <atomic count="1" name="HSP"/>
+      <atomic count="1" name="MFP"/>
+    </species>
+    <species id="MFP" name="MFP">
+      <atomic count="1" name="MFP"/>
+    </species>
+    <species id="Protein" name="Protein">
+      <atomic count="1" name="Protein"/>
+    </species>
+  </CompositionOfSpecies>
