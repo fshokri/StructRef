@@ -58,4 +58,53 @@ to utilize it.
 
 #####2.2 Binding the code
 To manipulate our generated user interface, we need to convert it to .py filename
-extension. With 
+extension. With typing this command in Command Prompt/Terminal *"pyuic4 -o OutFile_ui.py InFile.ui"*, the **UI.py**
+will be generated. After generating the code for the user interface with the filename extension
+.py, we need to create another Python file for binding the user interface code and
+the refinement source code, that we called **main.py**. And then we import our user
+interface and source code as the module in the binder code.
+
+#####2.3 Using the software
+
+The requirement for running the software is having the Windows or Linux operating
+system providing the Python and PyQt are installed. After compiling the
+binder that is main.py, we should get the executed form of application.
+we provide default filenames for outputs,
+namely *Species.xml*, *Atomic_refinment.xml*, *Complex_refinment.xml* and *Refined_model.sbml*
+
+which are removable and the user can define customized filenames. When users
+enter the input filename for the Initial model, the users can present chemical
+reaction of the model by clicking the Display button. By use of the Edit button,
+modelers are able to modify the file and save changes, then by the View button
+they can view the file in a browser according to platform either Windows or Linux.
+In the next step, for generating species, the modeler can utilize the default
+filename which is provided in the second LineEdit or opt for a customized one. By
+clicking the Generate button, the user should observe the output in the current
+folder according to the filename which is defined in the second LineEdit. Moreover,
+the modeler can modify the output file for instance Species.XML by clicking the
+Edit button. We define Edit function based on the three
+platforms Mac, Linux, and Windows. According to Windows platform modelers,
+can open the file in Word Pad for editing. In the Word Pad, users can update
+the name or count of corresponding species and then save the modification to
+be usable in further steps. Moreover, we designed the View buttons in order to
+enable modelers view the output file after modification. According to the platform
+modelers are running the software on, they can open the aforementioned output
+file in the corresponding browser. And they can observe the latest changes in the
+file.
+We follow the same approach as output file *Species.xml* for the two other outputs namely *Atomic_refinment.xml* and *Complex_refinment.xml*. By clicking generate button for Atomic_refinment.xml, our
+second output file will be produced in the current folder. In case of Linux platform,
+user is able to open the Atomic_refinment file in text editor for instance Note Pad
+by Edit button. In the editor, modelers can increase the number of the instance
+for the desired species according to their case study. After modification, they can
+view the output file in the firefox browser by clicking View buttons providing
+having Linux platform.
+For the Complex_refinment.xml, modelers can generate this file by clicking
+Generate button which can be edited by Edit button. In the editor, modelers
+are able to update the complex species’ name and save the changes. And then
+they can be sure that every change is applied by checking the file through the web
+browser.
+The Refined_model.sbml is considered as final output file with the same file
+format as our input. Furthermore, The method of use of final output in software
+is different from other outputs since we have the different buttons for it namely
+Generate, Display and View. After generating the refined model, the modeler
+has no option to modify the model as there is no Edit button defined for that.
