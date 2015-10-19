@@ -8,7 +8,7 @@ intended for generating the refined model as output after fetching the original
 model. For verifying our software, we take the heat shock response model as
 our case study. The software we implement produces the same result as the
 case study.
-[Read more!](http://fshokri.github.io/StructRef)
+#######[Webpage!](http://fshokri.github.io/StructRef)
 
 ### Implementation
 Our software is divided in two parts: back-end and front-end, which refer to
